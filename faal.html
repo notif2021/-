@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>دستت بده فالت بگیروم!</title>
+  <script>
+    async function sendNotif() {
+      try {
+        await fetch("https://eoz9lglmeiugyo3.m.pipedream.net", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message: "🧿 دستت رو دادی... فالت اومد!" })
+        });
+
+        alert("فال فرستاده شد 🌠");
+      } catch (e) {
+        alert("یه مشکلی پیش اومد 😕");
+        console.error(e);
+      }
+    }
+  </script>
+</head>
+<body style="direction: rtl; text-align: center; margin-top: 60px; font-family: Tahoma;">
+  <h1>✋ دستت بده فالت بگیروم!</h1>
+  <button onclick="sendNotif()" style="font-size: 20px; padding: 15px 40px; border-radius: 15px; border: none; background: linear-gradient(to right, #b31217, #e52d27); color: white;">
+    بزن بریم فال بگیری 🌟
+  </button>
+</body>
+</html>
